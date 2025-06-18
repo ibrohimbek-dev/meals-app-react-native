@@ -6,7 +6,7 @@ const IconButton = ({ icon, color, onPress }) => {
 	return (
 		<Pressable
 			android_ripple={{ color: "gray" }}
-			onPress={onPress}
+			onPressIn={onPress}
 			style={({ pressed }) => pressed && styles.pressed}
 		>
 			<Ionicons name={icon} size={24} color={color} />
